@@ -2,6 +2,7 @@ package alg;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Description:
@@ -16,7 +17,9 @@ import java.util.List;
  */
 public class FindPerfectNumber {
     public static void main(String... args) {
-        System.out.println(isPerfectNum(6));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        System.out.println(isPerfectNum(scanner.nextInt()));
     }
 
     private static boolean isPerfectNum(final int pNumber) {
